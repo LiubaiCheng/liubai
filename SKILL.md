@@ -100,25 +100,25 @@ mkdir -p 热点资讯追踪
 
 ### Step 4：确认必装技能
 
-告知用户3个必装技能及其用途：
+告知用户3个必装技能及其用途和来源：
 
-1. **skill_builder** — 技能的创建/编辑/发布，框架自维护
-2. **topic_tracking** — 追踪+日报核心自动化，晨读和信号追踪依赖
-3. **SkillSpector**（工具型）— 安全审查门禁，装在/tmp/
+1. **skill_builder** — 技能的创建/编辑/发布，框架自维护。来源：扣子平台内置
+2. **topic_tracking** — 追踪+日报核心自动化，晨读和信号追踪依赖。来源：扣子技能商店
+3. **SkillSpector**（工具型）— 安全审查门禁，装在/tmp/。来源：[GitHub](https://github.com/skill-spector/skill-spector)，开源漏洞扫描工具
 
 引导用户确认安装。
 
 ### Step 5：推荐选装技能
 
-根据用户场景推荐技能组：
+根据用户场景推荐技能组（来源均为扣子技能商店）：
 
-- **内容创作组**：wechat-svg / create-ppt / viral-short-story
-- **教学组**：lesson-plan-generator / exam-grading
-- **数据处理组**：pdf / docx / excel_master
-- **可视化组**：echart / drawio-generator / bar-chart-race-generator
-- **飞书协作组**：lark_cli
-- **多媒体组**：media-processor / lanshu-animated-architecture-diagram
-- **平台工具组**：using-coze-cli / coze-mini-expert / agent-browser / skill-assistant
+- **内容创作组**：wechat-svg（公众号SVG交互）/ create-ppt（演示文稿）/ viral-short-story（爆款小说）
+- **教学组**：lesson-plan-generator（教案生成）/ exam-grading（作业批改）
+- **数据处理组**：pdf（PDF处理）/ docx（Word文档）/ excel_master（Excel处理）
+- **可视化组**：echart（数据图表）/ drawio-generator（流程图架构图）/ bar-chart-race-generator（动态柱状图）
+- **飞书协作组**：lark_cli（飞书全业务域CLI）
+- **多媒体组**：media-processor（FFmpeg+ImageMagick）/ lanshu-animated-architecture-diagram（动态架构图）
+- **平台工具组**：using-coze-cli（Coze开发）/ coze-mini-expert（扣子答疑）/ agent-browser（浏览器自动化）/ skill-assistant（技能搜索安装）
 
 用户按需选择，不强装。
 
@@ -179,6 +179,33 @@ mkdir -p 热点资讯追踪
 ├── heartbeat_daily.md       # 每日心跳检查清单
 └── heartbeat_weekly.md      # 每周心跳检查清单（可选）
 ```
+
+## 框架优势
+
+### 成长性
+
+- **规则沉淀而非一次性配置**：WIKI的Ingest/Lint、TOOLS的工程纪律、MEMORY的行为规则——都是活的规则，随使用自然生长，不是写死就完的配置文件
+- **记忆分层自进化**：即时层（MEMORY.md）→ 近中期层（recent_memory/）→ 长期层（memory_search），三层记忆随交互自动积累和提炼，越用越懂你
+- **自动化线可持续迭代**：晨读信源可增减、追踪话题可开关、Skill雷达每周发现新能力——框架的自动化不是固定流水线，是会扩展的有机体
+- **入库即清+周Lint**：两条维护机制确保系统不会随时间腐化，越用越干净而非越用越臃肿
+
+### 普适性
+
+- **骨架优先，内容留空**：7层架构是方法论的容器，不是内容的拷贝。教师、投资人、研究员、自媒体人拿到后，填入自己的领域和偏好即可
+- **WIKI三阶段解耦**：Ingest（入库）/ Query（查询）/ Lint（维护）三个阶段独立运作，用户可以只用Ingest不跑Lint，也可以自写Query逻辑
+- **素材库领域无关**：框架不预设你关注什么领域。投研、科研、教学、自媒体、任何你感兴趣的领域——创建目录、填入WIKI定位表即可
+- **自动化线可选**：4条自动化线（晨读/心跳/周审视/Skill雷达）都是可选的，不需要晨读就不创建，不影响其他功能
+- **技能生态开放**：必装3个skill覆盖核心链路，选装按场景推荐，每周雷达持续发现新能力——不绑定特定平台或工具
+
+### 与其他方案的区别
+
+| | 超级助理框架 | 纯提示词方案 | 固定模板方案 |
+|---|---|---|---|
+| 知识管理 | Ingest/Query/Lint三阶段流转 | 手动粘贴 | 静态文件堆叠 |
+| 记忆系统 | 三层分级+语义检索 | 单一上下文 | 无 |
+| 自动化 | 日程工单驱动，独立执行 | 每次手动触发 | 无 |
+| 可维护性 | 周Lint+入库即清+失败学习 | 无 | 依赖人工 |
+| 安全性 | SkillSpector门禁 | 无 | 无 |
 
 ## 注意事项
 

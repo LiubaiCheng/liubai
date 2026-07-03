@@ -42,27 +42,27 @@
 
 ### 2.3 必装技能（3个）
 
-| 技能 | 用途 | 为什么必装 |
-|------|------|-----------|
-| skill_builder | 技能创建/编辑/发布 | 框架自维护 |
-| topic_tracking | 追踪+日报自动化 | 晨读和信号追踪依赖 |
-| SkillSpector | 安全审查 | 新装skill的前置门禁 |
+| 技能 | 用途 | 为什么必装 | 来源 |
+|------|------|-----------|------|
+| skill_builder | 技能创建/编辑/发布 | 框架自维护 | 扣子平台内置 |
+| topic_tracking | 追踪+日报自动化 | 晨读和信号追踪依赖 | 扣子技能商店 |
+| SkillSpector | 安全审查 | 新装skill的前置门禁 | [GitHub](https://github.com/skill-spector/skill-spector)，开源漏洞扫描工具 |
 
 ### 2.4 选装技能（按场景）
 
-**内容创作**：wechat-svg / create-ppt / viral-short-story
+**内容创作**：wechat-svg（公众号SVG交互）/ create-ppt（演示文稿）/ viral-short-story（爆款小说）
 
-**教学**：lesson-plan-generator / exam-grading
+**教学**：lesson-plan-generator（教案生成）/ exam-grading（作业批改）
 
-**数据处理**：pdf / docx / excel_master
+**数据处理**：pdf（PDF处理）/ docx（Word文档）/ excel_master（Excel处理）
 
-**可视化**：echart / drawio-generator / bar-chart-race-generator
+**可视化**：echart（数据图表）/ drawio-generator（流程图架构图）/ bar-chart-race-generator（动态柱状图）
 
-**飞书协作**：lark_cli
+**飞书协作**：lark_cli（飞书全业务域CLI）
 
-**多媒体**：media-processor / lanshu-animated-architecture-diagram
+**多媒体**：media-processor（FFmpeg+ImageMagick）/ lanshu-animated-architecture-diagram（动态架构图）
 
-**平台工具**：using-coze-cli / coze-mini-expert / agent-browser / skill-assistant
+**平台工具**：using-coze-cli（Coze开发）/ coze-mini-expert（扣子答疑）/ agent-browser（浏览器自动化）/ skill-assistant（技能搜索安装）
 
 ---
 
