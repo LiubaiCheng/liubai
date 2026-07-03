@@ -1,6 +1,10 @@
-# 🏗️ Super Assistant Framework
+# 🍄 Mycelium
+
+> **Mycelium** — Super Assistant Framework
 
 > 超级助理 Agent 的完整系统脚手架
+>
+> Mycelium（菌丝网络）——自然界最高效的信息网络。无中心、持续生长、连接一切。
 
 一个可复用的 Agent 系统框架，只搭骨架、装方法、留空位——不含任何个人设定、偏好或知识库沉淀。
 
